@@ -1,17 +1,15 @@
-import Header from './components/Header'
-import Hero from './components/Hero'
-import SearchPanel from './components/SearchPanel'
-import BuildingTypes from './components/BuildingTypes'
-import Technologies from './components/Technologies'
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import ProductSection from "./components/ProductSection";
+import Footer from "./components/Footer";
 
 export default function HomePage() {
   return (
-    <main className="bg-gray-50 min-h-screen">
-      <Header />
-      <Hero />
-      <SearchPanel />
-      <BuildingTypes />
-      <Technologies />
+    <main>
+      <Navbar />
+      <HeroSection />
+      <ProductSection />
+      <Footer />
     </main>
-  )
+  );
 }
