@@ -1,15 +1,17 @@
-import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import ProductSection from "./components/ProductSection";
-import Footer from "./components/Footer";
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import CarouselSection from "@/components/CarouselSection";
+import CategoryTabs from "@/components/CategoryTabs";
 
 export default function HomePage() {
   return (
-    <main>
+    <main className="bg-black text-white font-sans">
       <Navbar />
       <HeroSection />
-      <ProductSection />
-      <Footer />
+      <CarouselSection title="Новинки" />
+      <CarouselSection title="Популярное" />
+      <CarouselSection title="Выбор редакции" />
+      <CategoryTabs />
     </main>
   );
 }
